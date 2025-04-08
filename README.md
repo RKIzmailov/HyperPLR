@@ -29,9 +29,14 @@
     pip install numpy==1.23.5
     pip install torch-scatter==2.0.9 torch-sparse==0.6.14 torch-cluster==1.6.0 torch-spline-conv==1.2.1 --no-deps
     pip install torch-spline-conv==1.2.1 -f https://data.pyg.org/whl/torch-1.10.2+cpu.html
+    pip install python-louvain
     pip install -r .\requirment.txt
     ```
 
+    It may come that you need to install Install Microsoft C++ Build Tools. If so, then:
+    1) Download and install from: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    2) During installation, make sure to select "Desktop development with C++"
+    3) After installation, try again with your previous commands 
     
 ## The framework
 
