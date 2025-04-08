@@ -50,7 +50,7 @@ def compute_cliques(graphs, config, logger):
 
 
 def detect_max_cliques(graph, mode, config, logger):
-    cache = f'{config['data_dir']}/{config['dataset']}/cliques_{mode}.pkl'
+    cache = f'{config["data_dir"]}/{config["dataset"]}/cliques_{mode}.pkl'
     if os.path.exists(cache):
         logger.info('Found cache for max cliques {}'.format(mode))
         with open(cache, 'rb') as c:
@@ -118,7 +118,7 @@ class CliqueSampler:
 
     def compute_clique_distribution(self, max_cliques, smaller_cliques):
         # cache_name = 'data/{}/rho.pkl'.format(self.args.dataset)
-        cache_name = f'{self.config['data_dir']}/{self.config['dataset']}/rho.pkl'
+        cache_name = f'{self.config["data_dir"]}/{self.config["dataset"]}/rho.pkl'
         if os.path.exists(cache_name):
             self.logger.info('Found cache for rho.')
             with open(cache_name, 'rb') as f:

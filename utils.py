@@ -7,7 +7,7 @@ import numpy as np
 
 def load_graphs(config, logger):
     # dataset_dir = args.data_dir+args.dataset+'/'
-    dataset_dir = f'{config['data_dir']}/{config['dataset']}/'
+    dataset_dir = f'{config["data_dir"]}/{config["dataset"]}/'
     graphs = {}
     graphs['simplicies_train'] = read_simplicies(dataset_dir, mode='train')
     graphs['G_train'] = construct_graph(graphs['simplicies_train'])
@@ -15,8 +15,8 @@ def load_graphs(config, logger):
     # graphs['simplicies_test'] = read_simplicies(dataset_dir,  mode='test')
     # graphs['G_test'] = construct_graph(graphs['simplicies_test'])
     logger.info('Finish loading graphs.')
-    logger.info(f'Nodes train: {graphs['G_train'].number_of_nodes()}')
-    logger.info(f'Simplicies train: {len(graphs['simplicies_train'])}')
+    logger.info(f'Nodes train: {graphs["G_train"].number_of_nodes()}')
+    logger.info(f'Simplicies train: {len(graphs["simplicies_train"])}')
     return graphs
 
 

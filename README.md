@@ -1,6 +1,39 @@
 # HyperPLR: Hypergraph Generation through Projection, Learning, and Reconstruction
 
-The dependency of the code is in ``requirement.txt``.
+## Enverement preparation
+
+1. Clone the repository
+    ```
+    git clone https://github.com/RKIzmailov/HyperPLR.git
+    cd HyperPLR
+    ```
+
+2. Create virtual envirement with Python 3.9
+
+    Change the name `hyperplr` if you need
+    ```
+    conda create -n hyperplr python=3.9
+    ```
+
+3. Activate your enverement
+
+    ```
+    conda activate hyperplr
+    ```
+
+4. Install required dependencies 
+
+    ```
+    pip install torch==1.10.2 torchvision==0.2.2
+    pip uninstall numpy
+    pip install numpy==1.23.5
+    pip install torch-scatter==2.0.9 torch-sparse==0.6.14 torch-cluster==1.6.0 torch-spline-conv==1.2.1 --no-deps
+    pip install torch-spline-conv==1.2.1 -f https://data.pyg.org/whl/torch-1.10.2+cpu.html
+    pip install -r .\requirment.txt
+    ```
+
+
+## The framework
 
 The framework can be found in ``main.ipynb``.
 
@@ -20,7 +53,7 @@ Some related method should be found in utils. (The algorithm ``GWC`` in the pape
 - NDC-classes, 0.02602386474609375
 
 
-## metrics
+## Metrics
 
 - hypergraph
   - density
