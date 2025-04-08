@@ -32,10 +32,14 @@
     pip install -r .\requirment.txt
     ```
 
-
+    
 ## The framework
 
-The framework can be found in ``main.ipynb``.
+1. First configure `config.yaml`
+
+2. Thes run preprocessing
+
+3. The framework can be found in ``main.ipynb``.
 
 Some related method should be found in utils. (The algorithm ``GWC`` in the paper is implemented by function ``lazy_clique_edge_cover``)
 
